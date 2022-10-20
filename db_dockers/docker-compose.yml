@@ -1,0 +1,10 @@
+services:
+   my-rethinkdb:
+      image: rethinkdb
+      platform: linux/amd64
+#      volumes:
+#         - ${PWD}/rdata:/data
+      ports:
+         - 9090:8080
+         - 28015:28015
+         - 29015:29015
